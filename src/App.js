@@ -1,11 +1,14 @@
-import { Route } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import QuoteAll from "./screens/QuoteAll";
 import QuoteAdd from "./screens/QuotesAdd";
 import QuoteDetail from "./screens/QuoteDetail";
 
 function App() {
   return (
-    <div>
+    <Switch>
+      <Route path="/" exact>
+        <Redirect to="quote-all" />
+      </Route>
       <Route path="/quote-all" exact>
         <QuoteAll />
       </Route>
@@ -15,7 +18,7 @@ function App() {
       <Route path="/quote-all:quoteID">
         <QuoteDetail />
       </Route>
-    </div>
+    </Switch>
   );
 }
 
