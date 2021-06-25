@@ -7,15 +7,15 @@ function App() {
   return (
     <Switch>
       <Route path="/" exact>
-        <Redirect to="quote-all" />
+        <Redirect to="quotes" />
       </Route>
-      <Route path="/quote-all" exact>
+      <Route path="/quotes" exact>
         <QuoteAll />
       </Route>
       <Route path="/quote-add">
         <QuoteAdd />
       </Route>
-      <Route path="/quote-all:quoteID">
+      <Route path="/quotes/:quoteID">
         <QuoteDetail />
       </Route>
     </Switch>
