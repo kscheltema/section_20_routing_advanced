@@ -1,6 +1,6 @@
-import { classes } from "istanbul-lib-coverage";
 import { Fragment } from "react";
 import MainNav from "./MainNav";
+import classes from "./Layout.module.css";
 
 const Layout = (props) => {
   return (
