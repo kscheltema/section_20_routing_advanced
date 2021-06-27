@@ -1,5 +1,5 @@
 const FIREBASE_DOMAIN =
-  "https://burgerbuilder-89b34-default-rtdb.firebaseio.com/";
+  "https://burgerbuilder-89b34-default-rtdb.firebaseio.com";
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);
